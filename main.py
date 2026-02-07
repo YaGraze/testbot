@@ -1159,12 +1159,11 @@ async def main():
     print(f"Бот запущен и готов к работе.")
 
     print(f"⏰ ВРЕМЯ СЕРВЕРА: {datetime.now()}")
-
-    asyncio.create_task(check_silence_loop())
     
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
 
     asyncio.run(main())
+
 
