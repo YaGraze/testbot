@@ -22,6 +22,7 @@ BOT_TOKEN = "8260911545:AAGAw3r03Q_MW4-I2x2egqJ2FhVcZNIkxPo"
 OWNER_ID = 832840031
 USER_STATS = {}
 CHAT_HISTORY = {}
+dp = Dispatcher()
 
 #-------------------------------------------------------------------------------------------------------------------БАЗА ДАННЫХ (SQLite + WAL)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -1163,4 +1164,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
