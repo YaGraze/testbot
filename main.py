@@ -23,6 +23,7 @@ OWNER_ID = 832840031
 USER_STATS = {}
 CHAT_HISTORY = {}
 dp = Dispatcher()
+ACTIVE_DUELS = {}
 
 #-------------------------------------------------------------------------------------------------------------------БАЗА ДАННЫХ (SQLite + WAL)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -1166,3 +1167,4 @@ async def main():
 if __name__ == "__main__":
 
     asyncio.run(main())
+
