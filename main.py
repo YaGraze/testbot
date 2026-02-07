@@ -22,6 +22,8 @@ BOT_TOKEN = "8260911545:AAGAw3r03Q_MW4-I2x2egqJ2FhVcZNIkxPo"
 OWNER_ID = 832840031
 USER_STATS = {}
 CHAT_HISTORY = {}
+logging.basicConfig(level=logging.INFO)
+bot = Bot(token=BOT_TOKEN, parse_mode="HTML") 
 dp = Dispatcher()
 ACTIVE_DUELS = {}
 
@@ -1165,5 +1167,6 @@ async def main():
 if __name__ == "__main__":
 
     asyncio.run(main())
+
 
 
